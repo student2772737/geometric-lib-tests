@@ -13,7 +13,7 @@ class CircleTestCase(unittest.TestCase):
         result = area(2.5)
         self.assertAlmostEqual(result, 6.25 * math.pi)
     def test_area_close_to_zero(self):
-        result = area(0.1)
+        result = area(0)
         self.assertAlmostEqual(result, 0.01 * math.pi)
 
     def test_perimeter_normal(self):
